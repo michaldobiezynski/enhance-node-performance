@@ -6,6 +6,7 @@ console.log(cluster.isMaster);
 
 if (cluster.isMaster) {
   cluster.fork();
+  cluster.fork();
 } else {
   const express = require("express");
   const app = express();
